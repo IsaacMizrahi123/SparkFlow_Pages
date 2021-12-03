@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import './App.css';
 
-function App() {
+function Second() {
   return (
     <div>
       <h1>Bookkeeper</h1>
@@ -11,11 +10,11 @@ function App() {
           paddingBottom: "1rem"
         }}
       >
-        <Link to="/posts">Posts</Link> |{" "}
-        <Link to="/second">Second</Link>
+        <Link to="/object">nosi</Link> |{" "}
+        <Link to="/second">nosi2</Link>
       </nav>
     </div>
   );
 }
 
-export default App;
+export default Second;
