@@ -19,15 +19,13 @@ function PostObject() {
   }, [name]);
 
   if (!Object.keys(post).length) return <div Hello/>;
-
+  //p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4
   return (
-    <div>
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
-      <p>{post.user}</p>
-      <p>
-        <Link to="/">Go back</Link>
-      </p>
+    <div class="p-6 max-w-xl mx-auto bg-white rounded-xl shadow-md items-center">
+      <h1 class="text-2xl  font-medium text-black">{post.title}</h1>
+      <p class="text-xs hover:underline">By: {post.user}</p>
+      <p class="text-lg text-gray-500">{post.content}</p>
+      <Link class="text-xs hover:underline" to="/">Go back</Link>
     </div>
   );
 };
